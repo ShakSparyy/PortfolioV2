@@ -56,13 +56,7 @@ function aplicarAnimacoesIniciais() {
     el.style.animationDelay = `${i * 0.3}s`;
   });
 
-  document.addEventListener("DOMContentLoaded", () => {
-    document.body.classList.add("splash-active");
-    window.scrollTo(0, 0); 
-    setTimeout(() => {
-      typeEffect();
-    }, 1000);
-  });
+  
   
   // === HEADER MENU ACTIVE E HIGHLIGHT ===
   const menu = document.querySelector('.menu');
@@ -118,6 +112,12 @@ function aplicarAnimacoesIniciais() {
 function abrirModal(id) {
   document.getElementById("modal-projeto").style.display = "flex";
   document.body.style.overflow = "hidden";
+}
+const photo = document.querySelector(".profile-container");
+const bar = document.querySelector(".about-bar");
+if (photo && bar) {
+  photo.classList.add("move-left");
+  bar.classList.add("expand");
 }
 
 function fecharModal() {
