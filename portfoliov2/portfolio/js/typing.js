@@ -56,6 +56,13 @@ function aplicarAnimacoesIniciais() {
     el.style.animationDelay = `${i * 0.3}s`;
   });
 
+  const photo = document.querySelector('.profile-container');
+  const bar = document.querySelector('.about-bar');
+  if (photo && bar) {
+    photo.classList.add('move-left');
+    bar.classList.add('expand');
+  }
+
   
   
   // === HEADER MENU ACTIVE E HIGHLIGHT ===
@@ -112,12 +119,6 @@ function aplicarAnimacoesIniciais() {
 function abrirModal(id) {
   document.getElementById("modal-projeto").style.display = "flex";
   document.body.style.overflow = "hidden";
-}
-const photo = document.querySelector(".profile-container");
-const bar = document.querySelector(".about-bar");
-if (photo && bar) {
-  photo.classList.add("move-left");
-  bar.classList.add("expand");
 }
 
 function fecharModal() {
