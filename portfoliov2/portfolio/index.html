@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Portfólio</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  
+</head>
+<body>
+
+  <!-- Splash Screen -->
+  <div id="splash">
+    <div id="particles-js"></div>
+    <div class="splash-content">
+      <h1 class="title">JULIANO POMMER FILHO</h1>
+      <h2 class="subtitle">Desenvolvedor <span id="changing-word"></span></h2>
+    </div>
+  </div>
+
+  <main id="main-content" style="visibility: hidden;">
+
+    <!-- Header fixo -->
+    <header id="header">
+      <nav>
+        <ul class="menu">
+          <span class="highlight-box"></span>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Foto centralizada -->
+    <section id="home" class="section photo-section fade-in">
+      <div class="profile-container">
+        <img src="img/profile/profile.jpeg" alt="Juliano Pommer Filho" class="profile-photo glow">
+        <div class="decorative-lines">
+          <div class="line"></div>
+          <i class="fa-solid fa-code dev-icon"></i>
+          <div class="line"></div>
+        </div>
+      </div>
+       <!-- Seção Sobre -->
+    <section id="sobre" class="section fade-in">
+      <div class="container">
+        <h2>Sobre mim</h2>
+        <p>Me chamo Juliano Pommer Filho, sou formado em Análise e Desenvolvimento de Sistemas pela FIAP, a melhor faculdade de tecnologia do Brasil.
+
+          Sou desenvolvedor front-end com foco em design moderno, responsividade e performance. Tenho paixão por criar experiências digitais que unem estética e funcionalidade.
+          
+          Atuo principalmente com HTML, CSS, JavaScript, Python, Bootstrap, Dart mas também tenho experiência em Flutter e no desenvolvimento de sistemas SaaS.
+          
+          Além da programação, tenho um olhar empreendedor e gosto de transformar ideias em produtos reais que ajudam pessoas e negócios a crescerem.</p>
+      </div>
+    </section>
+    </section>
+
+    <!-- Projetos e Certificados com tabs -->
+    <section id="projetos-certificados" class="section fade-in">
+      <div class="tabs">
+        <button class="tab-button active" data-tab="projetos">Projetos</button>
+        <button class="tab-button" data-tab="certificados">Certificados</button>
+      </div>
+
+      <div class="tab-content" id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="grid-container">
+          <!-- Projeto 1 -->
+          <div class="projeto-item" onclick="abrirModal('projeto1')">
+            <img src="/portfoliov2/portfolio/img/projetos/Ecotide/Frame 1.png" alt="Projeto 1">
+            <h3>Ecotide</h3>
+          </div>
+          <!-- Projeto 2 -->
+          <div class="projeto-item" onclick="abrirModal('projeto2')">
+            <img src="/portfoliov2/portfolio/img/projetos/moove/Frame 1.png" alt="Projeto 2">
+            <h3>Moove</h3>
+          </div>
+          <!-- Projeto 3 -->
+          <div class="projeto-item" onclick="abrirModal('projeto3')">
+            <img src="/portfoliov2/portfolio/img/projetos/emailApp/Frame 12.png" alt="Projeto 3">
+            <h3>EmailApp</h3>
+          </div>
+          <!-- Adicione mais projetos aqui -->
+        </div>
+      </div>
+
+      <div class="tab-content" id="certificados" style="display: none;">
+        <h2>Meus Certificados</h2>
+        <p>Aqui vão seus certificados.</p>
+      </div>
+    </section>
+
+    <!-- Modal de Projeto -->
+    <div id="modal-projeto" class="modal">
+      <div class="modal-content">
+        <span class="fechar" onclick="fecharModal()">&times;</span>
+        <div class="modal-imgs" id="modal-imagens">
+          <!-- Imagens dinâmicas aqui -->
+        </div>
+        <div class="modal-descricao" id="modal-descricao">
+          <h3>Título do Projeto</h3>
+          <p>Descrição do projeto aqui.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="section fade-in">
+      <div class="container">
+        <h2>Sobre mim</h2>
+        <p>Me chamo Juliano Pommer Filho, sou formado em Análise e Desenvolvimento de Sistemas pela FIAP, a melhor faculdade de tecnologia do Brasil.
+
+          Sou desenvolvedor front-end com foco em design moderno, responsividade e performance. Tenho paixão por criar experiências digitais que unem estética e funcionalidade.
+          
+          Atuo principalmente com HTML, CSS, JavaScript, Python, Bootstrap, Dart mas também tenho experiência em Flutter e no desenvolvimento de sistemas SaaS.
+          
+          Além da programação, tenho um olhar empreendedor e gosto de transformar ideias em produtos reais que ajudam pessoas e negócios a crescerem.</p>
+      </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="section fade-in">
+      <div class="container">
+        <h2>Contato</h2>
+        <p>Aqui você pode colocar seu email, LinkedIn, ou um formulário de contato.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- scripts -->
+  <script src="../particles.js"></script>
+  <script src="js/app.js"></script>
+  <script src="./js/typing.js"></script>
+  <script src="https://kit.fontawesome.com/SEU_TOKEN_AQUI.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
