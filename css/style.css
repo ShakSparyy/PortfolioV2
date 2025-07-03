@@ -394,7 +394,24 @@ body.splash-active {
   animation-delay: 0.5s;
 }
 
+.skills-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 20px;
+}
 
+.skills-wrapper .skills-list {
+  flex: 1;
+}
+
+.divider {
+  width: 4px;
+  background-color: #72E5F2;
+  border-radius: 2px;
+  align-self: stretch;
+}
 
 .skills-list {
   list-style: none;
