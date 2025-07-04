@@ -35,7 +35,7 @@ function typeEffect() {
     } else {
       isDeleting = !isDeleting;
       if (!isDeleting) wordIndex++;
-      setTimeout(typeEffect, 800);
+      setTimeout(typeEffect, 600);
     }
   }
 }
