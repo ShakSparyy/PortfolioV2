@@ -5,7 +5,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     tsParticles.load('home-stars', {
       fpsLimit: 60,
-      fullScreen: { enable: false },
+      fullScreen: { enable: true },
       background: { color: 'transparent' },
       particles: {
         number: {
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         move: {
           enable: true,
-          speed: 0.2,
+          speed: 0.5,
           direction: 'none',
           random: true,
           straight: false,

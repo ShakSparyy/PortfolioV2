@@ -26,9 +26,9 @@ function typeEffect() {
 
       // Aguarda dissolver antes de mostrar o site
       setTimeout(() => {
-        debugger
+        
         document.getElementById("splash").style.display = "none";
-        document.getElementById("main-content").style.display = "block";;
+        document.getElementById("main-content").style.visibility = "visible";
         document.body.classList.remove("splash-active");
         window.scrollTo(0, 0);
         aplicarAnimacoesIniciais();
@@ -54,7 +54,7 @@ function aplicarAnimacoesIniciais() {
   // Animações das seções
   document.querySelectorAll('.fade-in').forEach((el, i) => {
     el.classList.add('fade-scale-up');
-    el.style.animationDelay = `${i * 0.3}s`;
+    el.style.animationDelay = `${i * 1}s`;
   });
 
   const photo = document.querySelector('.profile-container');

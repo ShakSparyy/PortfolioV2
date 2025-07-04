@@ -48,7 +48,7 @@ body.splash-active {
 
 #main-content{
 
- padding: top 10vh; ;
+ padding-top: 10vh; ;
   
 
 }
@@ -75,6 +75,7 @@ body.splash-active {
   display: flex;
   align-items: center;
   justify-content: center;
+  will-change: opacity, transform;
 }
 
 
@@ -135,6 +136,7 @@ body.splash-active {
 }
 .splash-dissolve {
   animation: dissolve 1s forwards;
+  will-change: opacity, transform;
 }
 .splash-content h2 {
   font-size: 1.3rem;
@@ -160,7 +162,7 @@ body.splash-active {
   position: relative;
   z-index: 2;
   border-radius: 12px;
-  transition: all 0.3s ease;
+  transition: all 1s ease;
 }
 
 .menu a.active {
@@ -389,10 +391,11 @@ body.splash-active {
 
 
 .about-bar {
-  transform: translateX(0);
-  transition: transform 1s ease;
-  will-change: transform;
-  overflow-x: hidden;
+  display: flex;
+  align-items: stretch;
+  padding: 20px;
+  max-width: 800px;
+  transform: translateX(-40px);
 }
 
 .side-line {
@@ -406,7 +409,7 @@ body.splash-active {
   margin-right: 20px;
 }
 .about-bar.expand {
-  transform: translateX(0); /* já começa certo */
+  animation: showBar 1s forwards;
 }
 
 
@@ -506,8 +509,14 @@ body.splash-active {
 }
 
 @keyframes scaleFadeUp {
-  0%   { opacity: 0; transform: translateY(20px); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% {
+    opacity: 0;
+    transform: scale(0.96) translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
 
 @keyframes slideInSkill {
@@ -519,13 +528,16 @@ body.splash-active {
 }
 
 @keyframes showBar {
-  from { transform: translateX(-20px); opacity: 0; }
-  to   { transform: translateX(0); opacity: 1; }
+ 
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes revealText {
-    from { opacity: 0; transform: translateX(-10px); } /* Reduced translation */
-    to { opacity: 1; transform: translateX(0); }
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
 }
 /* Scrollbar minimalista deslocada */
 ::-webkit-scrollbar {
