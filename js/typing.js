@@ -26,8 +26,9 @@ function typeEffect() {
 
       // Aguarda dissolver antes de mostrar o site
       setTimeout(() => {
+        debugger
         document.getElementById("splash").style.display = "none";
-        document.getElementById("main-content").style.visibility = "visible";
+        document.getElementById("main-content").style.display = "block";;
         document.body.classList.remove("splash-active");
         window.scrollTo(0, 0);
         aplicarAnimacoesIniciais();
@@ -125,3 +126,4 @@ function fecharModal() {
   document.getElementById("modal-projeto").style.display = "none";
   document.body.style.overflow = "";
 }
+
