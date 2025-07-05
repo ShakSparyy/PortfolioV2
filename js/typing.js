@@ -54,7 +54,7 @@ function aplicarAnimacoesIniciais() {
   // Animações das seções
   document.querySelectorAll('.fade-in').forEach((el, i) => {
     el.classList.add('fade-scale-up');
-    el.style.animationDelay = `${i * 1}s`;
+    el.style.animationDelay = `${i * 0.3}s`;
   });
 
   const photo = document.querySelector('.profile-container');

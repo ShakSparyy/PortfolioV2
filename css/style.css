@@ -117,13 +117,32 @@ body.splash-active {
   z-index: -1;
 }
 
-
-
-#skills h2{
-  display: flex;
-  justify-content: center;
+#skills{
+  padding: 20px;
 }
 
+#skills h2{
+  width: 100px;
+  padding: 10px;
+  font-size: 1rem;
+ text-align: center;
+ display: inline-block;
+ background-color: rgba(114, 229, 242, 0.15);
+ color: #72E5F2;
+ box-shadow: 0 0 10px #72E5F2, 0 0 8px #72E5F2;
+ border-radius: 25px;
+ display: table;
+ margin: 20px auto;
+
+}
+
+#contato{
+
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px 20px 20px;
+  
+  }
 
 
 .splash-content {
@@ -358,7 +377,7 @@ body.splash-active {
 }
 
 .modal-descricao h3 {
-  margin-bottom: 10px;
+  
   color: #72E5F2;
 }
 
@@ -424,7 +443,7 @@ body.splash-active {
   grid-template-columns: repeat(5, 1fr);
   gap: 30px;
   justify-items: center;
-  margin: 20px;
+  padding: 20px 20px 10px 20px;
 }
 
 .skill-item {
@@ -501,6 +520,25 @@ body.splash-active {
 .skill-item:nth-child(8) { animation-delay: 2.7s; }
 .skill-item:nth-child(9) { animation-delay: 3.0s; }
 .skill-item:nth-child(10) { animation-delay: 3.3s; }
+
+
+.wpp{
+  padding: 15px;
+  border:#72E5F2 solid;
+  border-radius: 25px;
+}
+
+.wpp a{
+  
+  color: #53c8db;
+}
+
+.wpp:hover{
+  background-color: rgba(114, 229, 242, 0.15);
+  transform: scale(1.03);
+  box-shadow: 0 0 8px rgba(114, 229, 242, 0.2);
+
+}
 
 /* Animações */
 @keyframes dissolve {
