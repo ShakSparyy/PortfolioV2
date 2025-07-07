@@ -740,12 +740,18 @@ body.splash-active {
       width: 120px;
       height: 120px;
     }
-  
+    .home-content {
+      flex-direction: column;
+    }
+
     .about-bar {
       flex-direction: column;
       align-items: center;
       transform: none;
       text-align: center;
+    }
+    .about-text {
+      font-size: 0.9rem;
     }
   
     .side-line {
