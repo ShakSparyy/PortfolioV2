@@ -95,21 +95,13 @@
     <div id="modal-projeto" class="modal">
       <div class="modal-content">
         <span class="fechar" onclick="fecharModal()">&times;</span>
-        <div class="modal-imgs" id="modal-imagens">
-          <img src="/img/projetos/Ecotide/Cadastro.png" alt="">
-          <img src="/img/projetos/Ecotide/Login.png" alt="">
-          <img src="/img/projetos/Ecotide/Home page.png" alt="">
-          <img src="/img/projetos/Ecotide/Rewards page.png" alt="">
-          <img src="/img/projetos/Ecotide/completion screen.png" alt="">
-          <img src="/img/projetos/Ecotide/Menu page.png" alt="">
-          <img src="/img/projetos/Ecotide/Points page.png" alt="">
-
+        <h3 id="modal-titulo"></h3>
+        <div class="carousel">
+          <span class="carousel-arrow left" onclick="mudarImagem(-1)">&#10094;</span>
+          <img id="modal-imagem" src="" alt="">
+          <span class="carousel-arrow right" onclick="mudarImagem(1)">&#10095;</span>
         </div>
-        </div>
-        <div class="modal-descricao" id="modal-descricao">
-          <h3>Título do Projeto</h3>
-          <p>Descrição do projeto aqui.</p>
-        </div>
+        <p class="modal-descricao" id="modal-descricao"></p>
       </div>
     </div>
     <div class="decorative-lines">
@@ -185,6 +177,6 @@
   <script src="js/homeStars.js" defer></script>
   <script src="https://kit.fontawesome.com/SEU_TOKEN_AQUI.js" crossorigin="anonymous" defer></script>
   <script src="js/wpp.js" defer></script>
-
+  <script src="js/modal.js" defer></script>
 </body>
 </html>

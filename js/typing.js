@@ -116,14 +116,5 @@ function aplicarAnimacoesIniciais() {
   });
 }
 
-// Modal
-function abrirModal(id) {
-  document.getElementById("modal-projeto").style.display = "flex";
-  document.body.style.overflow = "hidden";
-}
 
-function fecharModal() {
-  document.getElementById("modal-projeto").style.display = "none";
-  document.body.style.overflow = "";
-}
 
