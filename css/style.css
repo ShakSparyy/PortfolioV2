@@ -669,3 +669,89 @@ body.splash-active {
   background: #53c8db;
 }
 
+/* ==========================================================================
+   Responsividade
+   ========================================================================== */
+
+   @media (max-width: 1024px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .cert-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .skills-wrapper {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .menu {
+      gap: 30px;
+    }
+  
+    .menu a {
+      font-size: 1.1rem;
+    }
+  
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .cert-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .skills-wrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #header {
+      height: 12vh;
+    }
+  
+    .menu {
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+  
+    .menu a {
+      font-size: 1rem;
+      padding: 6px 12px;
+    }
+  
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .cert-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .skills-wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .profile-photo {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .about-bar {
+      flex-direction: column;
+      align-items: center;
+      transform: none;
+      text-align: center;
+    }
+  
+    .side-line {
+      width: 40px;
+      height: 4px;
+      margin: 0 auto 10px;
+    }
+  }
+  
