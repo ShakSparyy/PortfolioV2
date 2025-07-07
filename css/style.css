@@ -351,6 +351,36 @@ body.splash-active {
   padding: 10px;
 }
 
+/* Grid de certificados */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.cert-card {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(114, 229, 242, 0.3);
+}
+
+.cert-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Modal */
 .modal {
   display: none;
