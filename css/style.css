@@ -713,7 +713,7 @@ body.splash-active {
     .skills-wrapper {
       grid-template-columns: repeat(3, 1fr);
     }
-    home-content {
+    .home-content {
       flex-direction: column;
     }
 
@@ -729,7 +729,7 @@ body.splash-active {
     }
 
     .side-line {
-      width: 60px;
+      width: 160px;
       height: 4px;
       margin: 0 auto 10px;
     }
