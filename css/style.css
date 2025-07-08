@@ -762,6 +762,9 @@ body.splash-active {
   .splash-content h2 {
     font-size: 1.1rem;
   }
+  .section {
+    scroll-margin-top: 17vh;
+  }
 }
   
   @media (max-width: 480px) {
@@ -843,6 +846,9 @@ body.splash-active {
     }
     .splash-content h2 {
       font-size: 0.95rem;
+    }
+    .section {
+      scroll-margin-top: 20vh;
     }
   }
   
