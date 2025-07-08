@@ -710,10 +710,7 @@ body.splash-active {
       grid-template-columns: repeat(1, 1fr);
     }
   
-    .skills-wrapper {
-      grid-template-columns: repeat(2, 1fr);
-      
-    }
+    
     .home-content {
       flex-direction: column;
     }
@@ -748,6 +745,13 @@ body.splash-active {
   .carousel img {
     max-height: 40vh;
   }
+
+  .skills-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.1px;
+  }
+
+
   #modal-titulo,
   #modal-titulo2 {
     width: 20%;
