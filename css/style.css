@@ -703,15 +703,16 @@ body.splash-active {
     }
   
     .grid-container {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
     }
   
     .cert-grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
     }
   
     .skills-wrapper {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      
     }
     .home-content {
       flex-direction: column;
@@ -763,7 +764,7 @@ body.splash-active {
     font-size: 1.1rem;
   }
   .section {
-    scroll-margin-top: 17vh;
+    scroll-margin-top: 12vh;
   }
 }
   
@@ -792,6 +793,7 @@ body.splash-active {
   
     .skills-wrapper {
       grid-template-columns: repeat(2, 1fr);
+      
     }
   
     .profile-photo {
@@ -848,7 +850,7 @@ body.splash-active {
       font-size: 0.95rem;
     }
     .section {
-      scroll-margin-top: 20vh;
+      scroll-margin-top: 12vh;
     }
   }
   
