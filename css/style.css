@@ -854,7 +854,13 @@ body.splash-active {
       font-size: 0.95rem;
     }
     .section {
-      scroll-margin-top: 20vh;
+      scroll-margin-top: 12vh;
+    }
+  }
+
+  @media (max-height: 1000px) {
+    /* Estilos para telas mais baixinhas */ .section {
+      scroll-margin-top: 15vh;
     }
   }
   
