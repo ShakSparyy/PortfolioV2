@@ -755,6 +755,13 @@ body.splash-active {
     width: 90%;
     font-size: 0.85rem;
   }
+
+  .splash-content h1 {
+    font-size: 1.5rem;
+  }
+  .splash-content h2 {
+    font-size: 1.1rem;
+  }
 }
   
   @media (max-width: 480px) {
@@ -830,6 +837,12 @@ body.splash-active {
       top: 15px;
       right: 20px;
       font-size: 24px;
+    }
+    .splash-content h1 {
+      font-size: 1.25rem;
+    }
+    .splash-content h2 {
+      font-size: 0.95rem;
     }
   }
   
