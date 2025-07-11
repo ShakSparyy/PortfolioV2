@@ -1,5 +1,5 @@
 const link = document.getElementById("whatsapp-link");
-  const phone = "5564999964293"; // seu número com DDI e DDD
+  const phone = "5564999265341"; // seu número com DDI e DDD
   const msg = "Olá, vim pelo seu portfólio!";
   const encodedMsg = encodeURIComponent(msg);
 
