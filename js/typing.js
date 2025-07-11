@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.scrollTo(0, 0); // força abrir no topo
   setTimeout(() => {
     typeEffect(); // inicia o typing após splash
-  }, 1000);
+  }, 800);
 });
 
 // Ativa animações e interações após splash
@@ -54,7 +54,7 @@ function aplicarAnimacoesIniciais() {
   // Animações das seções
   document.querySelectorAll('.fade-in').forEach((el, i) => {
     el.classList.add('fade-scale-up');
-    el.style.animationDelay = `${i * 0.3}s`;
+    el.style.animationDelay = `${i * 0.1}s`;
   });
 
   const photo = document.querySelector('.profile-container');

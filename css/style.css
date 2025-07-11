@@ -75,7 +75,6 @@ body.splash-active {
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   background: black;
   z-index: 9999;
   display: flex;
@@ -178,7 +177,7 @@ body.splash-active {
 }
 .splash-dissolve {
   animation: dissolve 1s forwards;
-  will-change: opacity, transform;
+  will-change: opacity;
 }
 .splash-content h2 {
   font-size: 1.3rem;
@@ -623,7 +622,7 @@ body.splash-active {
 /* Animações */
 @keyframes dissolve {
     0% { opacity: 1; filter: blur(0px); transform: scale(1); }
-    100% { opacity: 0; filter: blur(5px); transform: scale(1.02); } /* Reduced blur and scale */
+    100% { opacity: 0; filter: blur(5px); transform: scale(1); } /* Reduced blur and scale */
 }
 
 @keyframes scaleFadeUp {
