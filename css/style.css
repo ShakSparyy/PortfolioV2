@@ -690,6 +690,12 @@ body.splash-active {
     .skills-wrapper {
       grid-template-columns: repeat(4, 1fr);
     }
+    .wpp:active{
+      background-color: rgba(114, 229, 242, 0.15);
+      transform: scale(1.03);
+      box-shadow: 0 0 8px rgba(114, 229, 242, 0.2);
+    
+    }
   }
   
   @media (max-width: 768px) {
@@ -768,6 +774,12 @@ body.splash-active {
   }
   .section {
     scroll-margin-top: 11vh;
+  }
+  .wpp:active{
+    background-color: rgba(114, 229, 242, 0.15);
+    transform: scale(1.03);
+    box-shadow: 0 0 8px rgba(114, 229, 242, 0.2);
+  
   }
 }
   
@@ -855,10 +867,24 @@ body.splash-active {
     .section {
       scroll-margin-top: 12vh;
     }
+    .wpp:active{
+      background-color: rgba(114, 229, 242, 0.15);
+      transform: scale(1.03);
+      box-shadow: 0 0 8px rgba(114, 229, 242, 0.2);
+    
+    }
   }
 
   @media (max-height: 1000px) {
-    /* Estilos para telas mais baixinhas */ .section {
+    /* Estilos para telas mais baixinhas */
+    .wpp:active{
+      background-color: rgba(114, 229, 242, 0.15);
+      transform: scale(1.03);
+      box-shadow: 0 0 8px rgba(114, 229, 242, 0.2);
+    
+    }
+    
+    .section {
       scroll-margin-top: 15vh;
     }
   }

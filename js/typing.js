@@ -98,6 +98,7 @@ function aplicarAnimacoesIniciais() {
   const linkInicial = document.querySelector('.menu a.active');
   if (linkInicial) atualizarHighlight(linkInicial);
 
+  sections.forEach(section => observer.observe(section));
   // Tabs de Projetos e Certificados
   const tabButtons = document.querySelectorAll(".tab-button");
   const tabContents = document.querySelectorAll(".tab-content");
